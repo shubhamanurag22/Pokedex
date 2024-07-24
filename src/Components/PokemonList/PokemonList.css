@@ -13,11 +13,11 @@
 }
 
 .controls{
-    margin: 0.5%;
+    width: 0 auto;
     padding: 5%;
 }
 
 .controls button{
-    padding: 1rem;
+    padding: 1rem ;
     margin-left: 1rem;
 }
