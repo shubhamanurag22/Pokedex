@@ -5,13 +5,13 @@ import Pokemon from "../Pokemon/Pokemon";
 
 function PokemonList(){
 
-    const [ pokemonListState, setPokemonListState] = useState({
-        PokemonList: [],
-        IsLoading: true,
-        pokedex_url: 'https://pokeapi.co/api/v2/pokemon/',
-        nextUrl:'',
-        prevurl:''
-    });
+    const [PokemonList, setPokemonList] = useState([]);
+    const [IsLoading, setIsLoading] = useState(true);
+
+    const [pokedex_url, setPokedex_url] = useState('https://pokeapi.co/api/v2/pokemon/');
+
+    const [nextUrl, setNextUrl] = useState('');
+    const [prevUrl, setPrevUrl] = useState('');
 
     async function downloadPokemons(){
         setIsLoading(true);
